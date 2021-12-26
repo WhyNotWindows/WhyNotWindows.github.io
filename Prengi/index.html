@@ -73,7 +73,7 @@
                     <span>PRENGI</span> - Платформа для прозрачного
                     управления бизнесом
                 </div>
-                <button class="button">Получить доступ</button>
+                <button data-modal="consultation" class="button">Получить доступ</button>
             </div>
         </div>
     </section>
@@ -127,27 +127,59 @@
                 </h2>
             </div>
             <div class="modules__menu">
-                <a href="#" class="modules__item">
-                    Prengi Production
-                </a>
-                <a href="#" class="modules__item">
-                    Prengi FMC
-                </a>
-                <a href="#" class="modules__item">
-                    Prengi Mallz Retail
-                </a>
-                <a href="#" class="modules__item">
-                    Prengi Logistic
-                </a>
-                <a href="#" class="modules__item">
-                    Prengi IT
-                </a>
-                <a href="#" class="modules__item">
-                    Prengi HR
-                </a>
+                <div class="modules__item">
+                    <button onClick="$('#slick-slide-control00').click();">
+                        Prengi Production
+                    </button>
+                </div>
+                <div class="modules__item">
+                    <button onClick="$('#slick-slide-control01').click();">
+                        Prengi FMC
+                    </button>
+                </div>
+                <div class="modules__item">
+                    <button onClick="$('#slick-slide-control02').click();">
+                        Prengi Mallz Retail
+                    </button>
+                </div>
+                <div class="modules__item">
+                    <button onClick="$('#slick-slide-control03').click();">
+                        Prengi Logistic
+                    </button>
+                </div>
+                <div class="modules__item">
+                    <button onClick="$('#slick-slide-control04').click();">
+                        Prengi IT
+                    </button>
+                </div>
+                <div class="modules__item">
+                    <button onClick="$('#slick-slide-control05').click();">
+                        Prengi HR
+                    </button>
+                </div>
             </div>
             <div class="modules__carousel">
-                <img src="icons/macbook.png" alt="macbook">
+                <div class="modules__slide">
+                    <img class="modules__img" src="icons/macbook.png" alt="macbook">
+                </div>
+                <div class="modules__slide">
+                    <img class="modules__img" src="icons/macbook.png" alt="macbook">
+                </div>
+                <div class="modules__slide">
+                    <img class="modules__img" src="icons/macbook.png" alt="macbook">
+                </div>
+                <div class="modules__slide">
+                    <img class="modules__img" src="icons/macbook.png" alt="macbook">
+                </div>
+                <div class="modules__slide">
+                    <img class="modules__img" src="icons/macbook.png" alt="macbook">
+                </div>
+                <div class="modules__slide">
+                    <img class="modules__img" src="icons/macbook.png" alt="macbook">
+                </div>
+            </div>
+            <div class="modules__invisible">
+
             </div>
         </div>
     </section>
@@ -218,7 +250,7 @@
                 </div>
                 <div class="variants__variant">
                     <div class="variants__storage variants__storage_right">
-                        Размещение не сервере
+                        Размещение на сервере
                     </div>
                     <div class="variants__descr variants__descr_right">
                         Услуга аренды пространства в центре обработки данных (колокация серверов) предназначена для клиентов
@@ -235,7 +267,7 @@
                 <div class="title title_dark">Приступить очень просто! <br> Нужно получить доступ и начать работу!</div>
             </div>
             <div class="simple__button">
-                <button class="button">связаться с нами</button>
+                <button data-modal="consultation" class="button">связаться с нами</button>
             </div>
         </div>
     </section>
@@ -245,7 +277,7 @@
             <div class="footer__wrapper">
                 <div class="footer__company">
                     <h3 class="footer__title">О компании</h3>
-                    <img src="icons/logo_2.png" alt="logo_2">
+                    <a href="#"><img src="icons/logo_2.png" alt="logo_2"></a>
                     <div class="footer__descr">
                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Управление задачами
                     </div>
@@ -253,19 +285,19 @@
                 <div class="footer__modules">
                     <h3 class="footer__title">Модули</h3>
                     <div class="footer__descr">
-                        Обслуживание <br> Паспорт объекта <br> Автоматизация бизнес процессов (BPM) <br> Проектное управление (РРМ) <br> Управление подрядчиками <br> Персональный дашборд <br> Управление задачами <br> Управление алгоритмами <br> Управление качеством <br> Склад <br> Service desk <br> Календарь <br> Prengi market
+                        <a href="#">Обслуживание</a> <br> <a href="#">Паспорт объекта</a> <br> <a href="#">Автоматизация бизнес процессов (BPM)</a> <br> <a href="#">Проектное управление (РРМ)</a> <br> <a href="#">Управление подрядчиками</a> <br> <a href="#">Персональный дашборд</a> <br> <a href="#">Управление задачами</a> <br> <a href="#">Управление алгоритмами</a> <br> <a href="#">Управление качеством</a> <br> <a href="#">Склад</a> <br> <a href="#">Service desk</a> <br> <a href="#">Календарь</a> <br> <a href="#">Prengi market</a>
                     </div>
                 </div>
                 <div class="footer__industries">
                     <h3 class="footer__title">Отрасли</h3>
                     <div class="footer__descr">
-                        Промышленность <br> Ритейл <br> Фасилити <br> Логистика <br> ITHR
+                        <a href="#">Промышленность</a> <br> <a href="#">Ритейл</a> <br> <a href="#">Фасилити</a> <br> <a href="#">Логистика</a> <br> <a href="#">ITHR</a>
                     </div>
                 </div>
                 <div class="footer__about">
                     <h3 class="footer__title">О нас</h3>
                     <div class="footer__descr">
-                        История <br> Наши отношения <br> Команда <br> Контакты
+                        <a href="#">История</a> <br> <a href="#">Наши отношения</a> <br> <a href="#">Команда</a> <br> <a href="#">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -275,5 +307,30 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <button data-modal="close" class="modal__close">
+                &times;
+            </button>
+            <div class="modal__subtitle">
+                Просто заполните форму заявки
+            </div>
+            <div class="modal__descr">
+                и мы перезвоним вам через 10 минут
+            </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+            </form>
+            <button data-modal="submit" class="button button_modal">заказать кОНСУЛЬТАЦИЮ</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
