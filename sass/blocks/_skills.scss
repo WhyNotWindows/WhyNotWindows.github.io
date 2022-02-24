@@ -30,6 +30,11 @@
         justify-content: center;
         align-items: center;
         color: $white;
+        transition: 0.7s all;
+        clip-path: circle(72% at center center);
+        &:hover {
+            clip-path: circle(63% at center center);
+        }
         &::before {
             content: "";
             width: 0;
