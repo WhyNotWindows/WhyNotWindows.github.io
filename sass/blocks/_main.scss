@@ -1,0 +1,28 @@
+.main {
+    position: relative;
+    min-height: 600px;
+    background: #006494;
+    &__header {
+        width: 500px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-65%);
+    }
+    &__developer {
+        font-weight: 500;
+        font-size: 42px;
+        color: white;
+        margin-bottom: 0;
+        span {
+            color: #FA8072;
+        }
+    }
+    &__autor {
+        font-size: 48px;
+        text-align: right;
+        color: white;
+        margin-bottom: 0;
+    }
+}

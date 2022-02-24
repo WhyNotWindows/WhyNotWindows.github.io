@@ -1,0 +1,78 @@
+.skills {
+    min-height: 800px;
+    padding-top: 40px;
+    &__title {
+        width: 75%;
+        margin: 0 auto;
+        color: #051923;
+        font-size: 27px;
+        text-align: center;
+    }
+    hr {
+        width: 300px;
+        margin: 15px auto;
+        border-bottom: none;
+        border-color: #FA8072;
+    }
+    &__wrapper {
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 40px;
+        position: relative;
+    }
+    &__octagon {
+        position: absolute;
+        width: 90px;
+        height: 200px;
+        background: #00A8E8;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        &::before {
+            content: "";
+            width: 0;
+            height: 200px;
+            position: absolute;
+            left: -60px;
+            border-right: 60px solid #00A8E8;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }
+        &::after {
+            content: "";
+            width: 0;
+            height: 200px;
+            position: absolute;
+            right: -60px;
+            border-left: 60px solid #00A8E8;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+        }
+        &_1 {
+
+        }
+        &_2 {
+            transform: translateX(340%) translateY(0%);
+        }
+        &_3 {
+            transform: translateX(680%) translateY(0%);
+        }
+        &_4 {
+            transform: translateX(170%) translateY(72%);
+        }
+        &_5 {
+            transform: translateX(510%) translateY(72%);
+        }
+        &_6 {
+            transform: translateX(0%) translateY(144%);
+        }
+        &_7 {
+            transform: translateX(340%) translateY(144%);
+        }
+        &_8 {
+            transform: translateX(680%) translateY(144%);
+        }
+    }
+}

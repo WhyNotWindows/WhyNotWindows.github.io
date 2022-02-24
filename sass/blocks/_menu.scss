@@ -1,0 +1,20 @@
+.menu {
+    padding-top: 17px;
+    min-height: 65px;
+    &__wrapper {
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__link {
+        color: #051923;
+        font-size: 20px;
+        &:hover {
+            color: #051923;
+            text-decoration: none;
+            text-shadow: #00A8E8 1px 0 10px;;
+        }
+    }
+}

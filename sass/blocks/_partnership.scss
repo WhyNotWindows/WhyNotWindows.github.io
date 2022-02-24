@@ -1,0 +1,76 @@
+.partnership {
+    min-height: 800px;
+    padding-top: 40px;
+    &__title {
+        width: 75%;
+        margin: 0 auto;
+        color: #051923;
+        font-size: 27px;
+        text-align: center;
+    }
+    hr {
+        width: 300px;
+        margin: 15px auto;
+        border-bottom: none;
+        border-color: #FA8072;
+    }
+    &__wrapper {
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 100px;
+        position: relative;
+    }
+    &__hexagon {
+        padding: 10px;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background: #00A8E8;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        &::before {
+            content: "";
+            width: 200px;
+            height: 0px;
+            position: absolute;
+            top: -60px;
+            border-right: 100px solid transparent;
+            border-left: 100px solid transparent;
+            border-bottom: 60px solid #00A8E8;
+        }
+        &::after {
+            content: "";
+            width: 200px;
+            height: 0px;
+            position: absolute;
+            bottom: -60px;
+            border-right: 100px solid transparent;
+            border-left: 100px solid transparent;
+            border-top: 60px solid #00A8E8;
+        }
+        &_2 {
+            transform: translateX(120%) translateY(0%);
+        }
+        &_3 {
+            transform: translateX(240%) translateY(0%);
+        }
+        &_4 {
+            transform: translateX(60%) translateY(155%);
+        }
+        &_5 {
+            transform: translateX(180%) translateY(155%);
+        }
+        &_6 {
+            transform: translateY(310%);
+        }
+        &_7 {
+            transform: translateX(120%) translateY(310%);
+        }
+        &_8 {
+            transform: translateX(240%) translateY(310%);
+        }
+    }
+}
