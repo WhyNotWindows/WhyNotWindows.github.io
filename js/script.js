@@ -41,7 +41,12 @@ $(document).ready(function(){
                 $(".examples__example").eq(i).height($(".examples__img").eq(i).height() - 2);
             }
             else {
-                $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height());
+                if ($(document).width() <= '575') {
+                    $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height() + 100);
+                }
+                else {
+                    $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height());
+                }
             }
             $(this).toggleClass("examples__img_active");
             $(".examples__button").eq(i).toggleClass("examples__button_active");
