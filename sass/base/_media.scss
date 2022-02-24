@@ -1,0 +1,157 @@
+@media(max-width:841px) {
+    .main {
+        &__header {
+            width: 300px;
+        }
+        &__developer {
+            font-size: 32px;
+            text-align: center;
+        }
+        &__autor {
+            font-size: 38px;
+            text-align: center;
+        }
+    }
+    .skills {
+        min-height: 910px;
+        &__wrapper {
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__octagon {
+            &_1 {
+    
+            }
+            &_2 {
+                transform: translateX(340%) translateY(0%);
+            }
+            &_3 {
+                transform: translateX(170%) translateY(72%);
+            }
+            &_4 {
+                display: none;
+            }
+            &_5 {
+                display: none;
+            }
+            &_6 {
+                transform: translateX(0%) translateY(144%);
+            }
+            &_7 {
+                transform: translateX(340%) translateY(144%);
+            }
+            &_8 {
+                transform: translateX(170%) translateY(216%);
+            }
+        }
+    }
+    .partnership {
+        min-height: 900px;
+        &__wrapper {
+            width: 400px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__hexagon {
+            &_2 {
+                transform: translateX(120%) translateY(0%);
+            }
+            &_3 {
+                transform: translateX(60%) translateY(155%);
+            }
+            &_4 {
+                display: none;
+            }
+            &_5 {
+                display: none;
+            }
+            &_6 {
+                transform: translateY(310%);
+            }
+            &_7 {
+                transform: translateX(120%) translateY(310%);
+            }
+            &_8 {
+                transform: translateX(60%) translateY(465%);
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .skills {
+        min-height: 1700px;
+        &__wrapper {
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__octagon {
+            &_1 {
+    
+            }
+            &_2 {
+                transform: translateX(0%) translateY(105%);
+            }
+            &_3 {
+                transform: translateX(0%) translateY(210%);
+            }
+            &_4 {
+                display: none;
+            }
+            &_5 {
+                display: none;
+            }
+            &_6 {
+                transform: translateX(0%) translateY(315%);
+            }
+            &_7 {
+                transform: translateX(0%) translateY(420%);
+            }
+            &_8 {
+                transform: translateX(0%) translateY(525%);
+            }
+        }
+    }
+    .partnership {
+        min-height: 1300px;
+        &__wrapper {
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__hexagon {
+            &_2 {
+                transform: translateX(50%) translateY(165%);
+            }
+            &_3 {
+                transform: translateX(0%) translateY(330%);
+            }
+            &_4 {
+                display: none;
+            }
+            &_5 {
+                display: none;
+            }
+            &_6 {
+                transform: translateX(50%) translateY(495%);
+            }
+            &_7 {
+                transform: translateX(0%) translateY(660%);
+            }
+            &_8 {
+                transform: translateX(50%) translateY(825%);
+            }
+        }
+    }
+    .examples {
+        &__example {
+            height: 177px;
+        }
+    }
+}
