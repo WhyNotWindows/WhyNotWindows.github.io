@@ -10,12 +10,12 @@
         margin: 0 auto;
     }
     &__link {
-        color: #051923;
+        color: $dark;
         font-size: 20px;
         &:hover {
-            color: #051923;
+            color: $dark;
             text-decoration: none;
-            text-shadow: #00A8E8 1px 0 10px;;
+            text-shadow: $second 1px 0 10px;;
         }
         margin: 0 10px;
     }

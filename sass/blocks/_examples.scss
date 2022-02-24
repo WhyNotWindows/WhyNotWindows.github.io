@@ -3,8 +3,8 @@
     padding: 10px 0 80px;
     &__title {
         height: 100px;
-        background: #006494;
-        color: white;
+        background: $first;
+        color: $white;
         font-size: 27px;
         line-height: 100px;
         text-align: center;
@@ -22,7 +22,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 500px;
-        background: #979dac;
+        background: $examples;
         border-radius: 5px;
         overflow: hidden;
         height: 180px;
@@ -40,7 +40,7 @@
     }
     &__link {
         font-size: 26px;
-        color: #006494;
+        color: $first;
     }
     &__price {
         margin-top: 7px;
@@ -48,7 +48,7 @@
         line-height: 1.2;
         span {
             font-size: 20px;
-            color: #006494;
+            color: $first;
         }
     }
     &__time {
@@ -56,7 +56,7 @@
         line-height: 1.2;
         span {
             font-size: 20px;
-            color: #006494;
+            color: $first;
         }
     }
     &__button {
@@ -73,7 +73,7 @@
     }
     &__arrow {
         width: 30px;
-        color: #006494;
+        color: $first;
         transition: 1s all;
     }
 }

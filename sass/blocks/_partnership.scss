@@ -4,7 +4,7 @@
     &__title {
         width: 75%;
         margin: 0 auto;
-        color: #051923;
+        color: $dark;
         font-size: 27px;
         text-align: center;
     }
@@ -25,12 +25,12 @@
         position: absolute;
         width: 200px;
         height: 100px;
-        background: #00A8E8;
+        background: $second;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: $white;
         &::before {
             content: "";
             width: 200px;
@@ -39,7 +39,7 @@
             top: -60px;
             border-right: 100px solid transparent;
             border-left: 100px solid transparent;
-            border-bottom: 60px solid #00A8E8;
+            border-bottom: 60px solid $second;
         }
         &::after {
             content: "";
@@ -49,7 +49,7 @@
             bottom: -60px;
             border-right: 100px solid transparent;
             border-left: 100px solid transparent;
-            border-top: 60px solid #00A8E8;
+            border-top: 60px solid $second;
         }
         &_2 {
             transform: translateX(120%) translateY(0%);

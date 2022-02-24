@@ -4,7 +4,7 @@
     &__title {
         width: 75%;
         margin: 0 auto;
-        color: #051923;
+        color: $dark;
         font-size: 27px;
         text-align: center;
     }
@@ -24,19 +24,19 @@
         position: absolute;
         width: 90px;
         height: 200px;
-        background: #00A8E8;
+        background: $second;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: $white;
         &::before {
             content: "";
             width: 0;
             height: 200px;
             position: absolute;
             left: -60px;
-            border-right: 60px solid #00A8E8;
+            border-right: 60px solid $second;
             border-top: 60px solid transparent;
             border-bottom: 60px solid transparent;
         }
@@ -46,7 +46,7 @@
             height: 200px;
             position: absolute;
             right: -60px;
-            border-left: 60px solid #00A8E8;
+            border-left: 60px solid $second;
             border-top: 60px solid transparent;
             border-bottom: 60px solid transparent;
         }
