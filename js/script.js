@@ -32,12 +32,36 @@ $(document).ready(function(){
                 $(".examples__example").eq(i).height(160);
             }
             else {
-                $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height());
+                $(".examples__example").eq(i).height($(".examples__img").eq(i).height() + $(".examples__descr").eq(i).height());
             }
             $(this).toggleClass("examples__button_active");
             $(".examples__img").eq(i).toggleClass("examples__img_active");
         });
     });
+
+        //examples img toggle
+        $(".examples__img").each(function(i){
+            $(this).click(function(){
+                if ($(this).hasClass("examples__img_active")){
+                    if ($(document).width() <= '575') {
+                        $(".examples__example").eq(i).height($(".examples__img").eq(i).height() - 2);
+                    }
+                    else {
+                        $(".examples__example").eq(i).height(160);
+                    }
+                }
+                else {
+                    if ($(document).width() <= '575') {
+                        $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height() + 100);
+                    }
+                    else {
+                        $(".examples__example").eq(i).height($(".examples__img").eq(i).height() + $(".examples__descr").eq(i).height());
+                    }
+                }
+                $(this).toggleClass("examples__img_active");
+                $(".examples__arrow").eq(i).toggleClass("examples__button_active");
+            });
+        });
 
     //example width
     function windowSize() {
@@ -51,25 +75,6 @@ $(document).ready(function(){
             $(".examples__example").width(500);
         }
     }
-
-    //examples img toggle
-    $(".examples__img").each(function(i){
-        $(this).click(function(){
-            if ($(this).hasClass("examples__img_active")){
-                $(".examples__example").eq(i).height($(".examples__img").eq(i).height() - 2);
-            }
-            else {
-                if ($(document).width() <= '575') {
-                    $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height() + 100);
-                }
-                else {
-                    $(".examples__example").eq(i).height($(".examples__example").eq(i).height() + $(".examples__descr").eq(i).height());
-                }
-            }
-            $(this).toggleClass("examples__img_active");
-            $(".examples__button").eq(i).toggleClass("examples__button_active");
-        });
-    });
 
     $(window).on('load resize', windowSize);
 
