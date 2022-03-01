@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="menu">
-        <div class="container">
+    <nav>
+        <div class="menu">
             <div class="menu__wrapper">
                 <a href="#main" class="menu__link">Главная</a>
                 <a href="#skills" class="menu__link">Навыки</a>
@@ -17,6 +17,18 @@
                 <a href="#partnership" class="menu__link">Сотрудничество со мной</a>
                 <a href="#examples" class="menu__link">Примеры моих работ</a>
             </div>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="menu-fake">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
     <section class="main" id="main">
@@ -32,28 +44,28 @@
             </div>
             <hr>
             <div class="skills__wrapper">
-                <div class="skills__octagon skills__octagon_1">
-                    HTML <br> CSS <br> javascript
+                <div class="skills__octagon skills__octagon_1 wow animate__animated animate__fadeInUp1" data-wow-duration="1" data-wow-delay="0.3s">
+                    HTML <br> CSS <br> Javascript
                 </div>
-                <div class="skills__octagon skills__octagon_2">
+                <div class="skills__octagon skills__octagon_2 wow animate__animated animate__fadeInUp2" data-wow-duration="1" data-wow-delay="0.4s">
                     Bootstrap <br> FlexBox
                 </div>
-                <div class="skills__octagon skills__octagon_3">
+                <div class="skills__octagon skills__octagon_3 wow animate__animated animate__fadeInUp3" data-wow-duration="1" data-wow-delay="0.5s">
                     Gulp <br> Jquery
                 </div>
-                <div class="skills__octagon skills__octagon_4">
+                <div class="skills__octagon skills__octagon_4 wow animate__animated animate__fadeInUp4" data-wow-duration="1" data-wow-delay="0.6s">
                     
                 </div>
-                <div class="skills__octagon skills__octagon_5">
+                <div class="skills__octagon skills__octagon_5 wow animate__animated animate__fadeInUp5" data-wow-duration="1" data-wow-delay="0.7s">
                     
                 </div>
-                <div class="skills__octagon skills__octagon_6">
+                <div class="skills__octagon skills__octagon_6 wow animate__animated animate__fadeInUp6" data-wow-duration="1" data-wow-delay="0.8s">
                     Responsive <br> PixelPerfect
                 </div>
-                <div class="skills__octagon skills__octagon_7">
+                <div class="skills__octagon skills__octagon_7 wow animate__animated animate__fadeInUp7" data-wow-duration="1" data-wow-delay="0.9s">
                     GitHub <br> БЭМ
                 </div>
-                <div class="skills__octagon skills__octagon_8">
+                <div class="skills__octagon skills__octagon_8 wow animate__animated animate__fadeInUp8" data-wow-duration="1" data-wow-delay="1s">
                     Animations <br> Libraries
                 </div>
             </div>
@@ -76,28 +88,28 @@
             </div>
             <hr>
             <div class="partnership__wrapper">
-                <div class="partnership__hexagon partnership__hexagon_1">
+                <div class="partnership__hexagon partnership__hexagon_1 wow animate__animated animate__fadeInUp1h" data-wow-duration="1" data-wow-delay="0.3s">
                     Качественно сверстанный сайт
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_2">
+                <div class="partnership__hexagon partnership__hexagon_2 wow animate__animated animate__fadeInUp2h" data-wow-duration="1" data-wow-delay="0.4s">
                     Который соответствует вашим ожиданиям
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_3">
+                <div class="partnership__hexagon partnership__hexagon_3 wow animate__animated animate__fadeInUp3h" data-wow-duration="1" data-wow-delay="0.5s">
                     Быстрая обратная связь
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_4">
+                <div class="partnership__hexagon partnership__hexagon_4 wow animate__animated animate__fadeInUp4h" data-wow-duration="1" data-wow-delay="0.6s">
                     
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_5">
+                <div class="partnership__hexagon partnership__hexagon_5 wow animate__animated animate__fadeInUp5h" data-wow-duration="1" data-wow-delay="0.7s">
                     
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_6">
+                <div class="partnership__hexagon partnership__hexagon_6 wow animate__animated animate__fadeInUp6h" data-wow-duration="1" data-wow-delay="0.8s">
                     Поддержка проекта после выполнения заказа
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_7">
+                <div class="partnership__hexagon partnership__hexagon_7 wow animate__animated animate__fadeInUp7h" data-wow-duration="1" data-wow-delay="0.9s">
                     Хороший, оптимизированный и понятный код
                 </div>
-                <div class="partnership__hexagon partnership__hexagon_8">
+                <div class="partnership__hexagon partnership__hexagon_8 wow animate__animated animate__fadeInUp8h" data-wow-duration="1" data-wow-delay="1s">
                     Полная уверенность в результате заказа
                 </div>
             </div>
@@ -119,7 +131,7 @@
                             <img src="icons/arrow.png" alt="arrow" class="examples__arrow">
                         </button>
                     </div>
-                    <div class="examples__descr"> <br> Простой, но красивый сайт. Адаптирован под мобильные устройства. Один из моих первых лендингов.</div>
+                    <div class="examples__descr"> <br> Простой и небольшой сайт. Выполняется быстро и качественно. При желании, могу добавить собственных анимаций. Адаптирован под мобильные устройства. Один из моих первых лендингов.</div>
                 </div>
                 <div class="examples__example">
                     <img src="img/Uber.jpg" alt="Uber" class="examples__img">
@@ -131,7 +143,7 @@
                             <img src="icons/arrow.png" alt="arrow" class="examples__arrow">
                         </button>
                     </div>
-                    <div class="examples__descr"> <br> Минималистичный сайт в черно-белой теме с синими элементами, адаптирован под мобильные устройства. Интерактивных элементов не много. При верстке проблем не возникало. Сайт выглядит элегантно, а верстается быстро и качественно.</div>
+                    <div class="examples__descr"> <br> Сайт с аккуратным минималистичным дизайном. Адаптирован под мобильные устройства. Интерактивных элементов не много. При верстке проблем не возникало. Сайт выглядит элегантно, а верстается быстро и качественно.</div>
                 </div>
                 <div class="examples__example">
                     <img src="img/Pulse.jpg" alt="Pulse" class="examples__img">
@@ -143,7 +155,7 @@
                             <img src="icons/arrow.png" alt="arrow" class="examples__arrow">
                         </button>
                     </div>
-                    <div class="examples__descr"> <br> Интересный проект. Реализовал на нем множество интерактивных плюшек и красивых анимаций. Использовал сторонние библиотеки. Ажаптирован под мобильные устройства.</div>
+                    <div class="examples__descr"> <br> Интересный проект. Реализовал на нем множество интерактивных плюшек и красивых анимаций. Использовал сторонние библиотеки. Также, сайт полностью оптимизирован по Google Page Speed, что дает плюс к SEO оптимизации вашего сайта.</div>
                 </div>
                 <div class="examples__example">
                     <img src="img/Prengi.jpg" alt="Prengi" class="examples__img">
@@ -155,7 +167,7 @@
                             <img src="icons/arrow.png" alt="arrow" class="examples__arrow">
                         </button>
                     </div>
-                    <div class="examples__descr"> <br> Довольно большой лендиг. Создалл несколько интерактивных элементов, адаптивный слайдер. Сайт адаптирован под мобильные устройства.</div>
+                    <div class="examples__descr"> <br> Landing page платвформы для ведения бизнеса. Создал на нем интересный адаптивный слайдер с удобным управлением. Сайт адаптирован под мобильные устройства, а все скрипты максимально оптимизированы для лучшей прогрузки сайта.</div>
                 </div>
                 <div class="examples__example">
                     <img src="img/GlobalOpt.jpg" alt="GlobalOpt" class="examples__img">
@@ -167,14 +179,30 @@
                             <img src="icons/arrow.png" alt="arrow" class="examples__arrow">
                         </button>
                     </div>
-                    <div class="examples__descr"> <br> Landing page компании доставки. Реализовал на нем необычный слайдер, интерактивную карту и нексолько элементов с интересными анимациями. Адаптирован под мобильные устройства.</div>
+                    <div class="examples__descr"> <br> Довольно большой лендинг. Реализовал на нем необычный слайдер, интерактивную карту и нексолько элементов с интересными анимациями. В процессе верстки научился новым техникам, которые применяю по сей день. Адаптирован под мобильные устройства.</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__autor">
+                Designed and made by Yaroslav Haidash
+            </div>
+            <div class="footer__social">
+                <a href="#"><div class="footer__social-item"><ion-icon name="paper-plane-outline"></ion-icon></div></a>
+                <a href="#"><div class="footer__social-item"><ion-icon name="mail-outline"></ion-icon></div></a>
+                <a href="#"><div class="footer__social-item"><ion-icon name="call-outline"></ion-icon></div></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

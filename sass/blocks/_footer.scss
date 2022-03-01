@@ -1,0 +1,40 @@
+.footer {
+    min-height: 190px;
+    padding: 40px 0;
+    background: $first;
+    &__autor {
+        font-weight: 300;
+        color: $white;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    a {
+        margin: 0 15px;
+    }
+    &__social-item {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border: solid 2px #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        transition: 0.3s all;
+        &:hover {
+            border-radius: 30%;
+            box-shadow: 0px 0px 10px #fff;
+        }
+        ion-icon {
+            color: $white;
+            font-size: 24px;
+            height: 27px;
+        }
+    }
+    &__social {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
