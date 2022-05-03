@@ -1,0 +1,191 @@
+.footer {
+    min-height: 846px;
+    padding: 50px 0 41px 0;
+    background: url(../img/bg3.jpg) center (center/cover) no-repeat;
+    &__contact {
+        margin-right: 10px;
+    }
+    &__email {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #FFFFFF;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    &__number {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    &__title {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__descr {
+        margin-top: 23px;
+        font-weight: 300;
+        font-size: 13px;
+        color: #FFFFFF;
+    }
+    &__middle {
+        margin: 28px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__cards {
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        height: 86px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: none;
+        border-left: none;
+    }
+    &__which {
+        width: 118px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    &__attention {
+        text-align: center;
+        width: 772px;
+        height: 86px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 86px;
+        color: #FFFFFF;
+        span {
+            text-decoration: underline;
+        }
+    }
+    &__bottom {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    &__age {
+        margin-right: 28px;
+    }
+    &__rights {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        br {
+            display: none;
+        }
+    }
+    &__right {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        height: 27px;
+    }
+    &__icon {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        &:nth-child(1) {
+            padding-right: 23px;
+        }
+        &:nth-child(2) {
+            padding: 0 23px;
+        }
+        &:nth-child(3) {
+            border-right: none;
+            padding-left: 23px;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .footer {
+        &__cards {
+            width: 100%;
+            height: 105px;
+            padding-bottom: 15px;
+        }
+        &__bottom {
+            flex-wrap: wrap;
+            margin-top: 43px;
+        }
+        &__left {
+            width: 100%;
+            justify-content: center;
+        }
+        &__right {
+            margin-top: 33px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .footer {
+        &__call {
+            margin-top: 23px;
+        }
+        &__mail {
+            margin-top: 23px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 35px;
+            height: auto;
+        }
+        &__which {
+            width: 100%;
+            text-align: center;
+            margin-top: 27px;
+        }
+        &__wallets {
+            margin-top: 19px;
+        }
+        &__attention{
+            line-height: 1.2;
+            padding: 22px 0;
+        }
+        &__left {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &__age {
+            margin: 0 auto;
+        }
+        &__rights {
+            width: 100%;
+            margin-top: 21px;
+            text-align: center;
+            br {
+                display: block;
+            }
+        }
+    }
+}

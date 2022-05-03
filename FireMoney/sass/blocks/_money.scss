@@ -1,0 +1,221 @@
+.money {
+    &__progress {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+    }
+    &__step {
+        position: relative;
+        width: 68px;
+        height: 193px;
+        //width: 248px;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__descr {
+        position: absolute;
+        left: -135%;
+        bottom: 0;
+        width: 248px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+        color: #45515F;
+    }
+    &__num {
+        z-index: 2;
+        width: 34px;
+        height: 34px;
+        background: #FFFFFF;
+        color: #D6D3D3;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 34px;
+        top: 53%;
+        position: absolute;
+        font-weight: 500;
+        font-size: 16px;
+        transition: 1s all;        
+        &_1 {
+            left: 11%;
+            &_active {
+                background: #FA5914;
+                color: #ffff;
+            }
+        }
+        &_2 {
+            left: 36%;
+            &_active {
+                background: #FA5914;
+                color: #ffff;
+            }
+        }
+        &_3 {
+            left: 61%;
+            &_active {
+                background: #FA5914;
+                color: #ffff;
+            }
+        }
+        &_4 {
+            left: 86%;
+            &_active {
+                background: #FA5914;
+                color: #ffff;
+            }
+        }
+    }
+    &__small {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &__range {
+        top: 58%;
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        &::-webkit-slider-thumb {
+            /* -webkit-appearance: none;
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            opacity: 0;
+            position: relative; */
+            display: none;
+        }
+    }
+
+}
+.slider {
+    top: 59%;
+    position: absolute;
+    width: 100%;
+    &__progressbar {
+        z-index: 1;
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        height: 10px;
+        width: 12%;
+        background: linear-gradient(81.55deg, #FFC83E 33.93%, #FF9F47 73.78%);
+        border-radius: 8px;
+        transition: 0.5s all;
+    }
+}
+
+@media(max-width:1024px) {
+    .money {
+        &__progress {
+            margin-top: 33px;
+        }
+        &__descr {
+            width: 196px;
+            left: -100%;
+            top: 80%;
+        }
+        &__num {     
+            &_1 {
+                left: 10%;
+            }
+            &_2 {
+                left: 35%;
+            }
+            &_3 {
+                left: 60%;
+            }
+            &_4 {
+                left: 85%;
+            }
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .money {
+        &__descr {
+            text-align: left;
+        }
+        &__progress {
+            margin-top: 49px;
+            //transform: rotateZ(90deg);
+            flex-direction: column;
+            justify-content: left;
+        }
+        &__small {
+            //width: 512px;
+            width: 256px;
+            //left: -38%;
+            left: 0%;
+        }
+        &__step {
+            width: 100%;
+            height: 68px;
+            margin-top: 70px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+        &__img {
+            margin-left: 10px;
+        }
+        &__num {     
+            &_1 {
+                top: 7%;
+                //left: 32%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &_2 {
+                top: 32%;
+                //left: 32%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &_3 {
+                top: 62%;
+                //left: 32%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &_4 {
+                top: 89%;
+                //left: 32%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__descr {
+            width: 196px;
+            left: 100%;
+            transform: translateX(-90%);
+            top: 0;
+            &_1 {
+                top: 15%;
+            }
+        }
+        &__range {
+            //left: -10vmax;
+/*             //left: -38%;
+            left: -128px;
+            top: 49%;
+            transform: rotateZ(90deg);
+            width: 512px; */
+        }
+    }
+    .slider {
+        left: -124px;
+        top: 49%;
+        transform: rotateZ(90deg);
+        width: 512px;
+    }
+}

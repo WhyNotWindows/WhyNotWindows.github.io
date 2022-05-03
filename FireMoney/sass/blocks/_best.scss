@@ -1,0 +1,11 @@
+.best {
+    min-height: 910px;
+    padding: 49px 0 45px 0;
+    background: #F6F9FC;
+}
+
+@media(max-width:768px) {
+    .best {
+        padding-bottom: 70px;
+    }   
+}

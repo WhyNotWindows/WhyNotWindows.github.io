@@ -1,0 +1,47 @@
+.get {
+    position: relative;
+    min-height: 356px;
+    padding: 61px 0;
+    &__descr {
+        margin: 26px 0;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 133.5%;
+        color: #536473;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        //top: -54px;
+        bottom: 0;
+    }
+}
+
+@media(max-width:1024px) {
+    .get {
+        padding-bottom: 0;
+        &__descr {
+            text-align: center;
+        }
+        button {
+            margin: 0 auto;
+        }
+        &__img {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 32px;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .get {
+        padding-top: 38px;
+        &__small {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+        }
+    }
+}

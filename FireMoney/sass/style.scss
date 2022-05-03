@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+@import 'base/variables';
+
+@import 'blocks/promo';
+@import 'blocks/nav';
+@import 'blocks/menu';
+@import 'blocks/button';
+@import 'blocks/calc';
+@import 'blocks/logo';
+@import 'blocks/hot';
+@import 'blocks/best';
+@import 'blocks/title';
+@import 'blocks/offers';
+@import 'blocks/border';
+@import 'blocks/money';
+@import 'blocks/ways';
+@import 'blocks/comments';
+@import 'blocks/clients';
+@import 'blocks/sity';
+@import 'blocks/about';
+@import 'blocks/answers';
+@import 'blocks/get';
+@import 'blocks/footer';
+@import 'blocks/hamburger';
+
+@import 'libs/bootstrap-reboot.min';
+//@import 'libs/fonts';
+
+@import 'base/media';
+
+* {
+    font-family: 'Rubic', sans-serif;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

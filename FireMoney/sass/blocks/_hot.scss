@@ -1,0 +1,38 @@
+.hot {
+    position: relative;
+    padding: 0 23px 0 8px;
+    width: 382px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    &__fire {
+        position: absolute;
+        left: 8;
+        top: -10px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #3C4260;
+        text-align: right;
+    }
+}
+
+@media(max-width:1160px) {
+    .hot {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:575px) {
+    .hot {
+        width: 100%;
+        padding: 0 20px 0 0;
+        &__text {
+            font-size: 20px;
+        }
+    }
+}

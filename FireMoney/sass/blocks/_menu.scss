@@ -1,0 +1,113 @@
+.menu {
+    width: 471px;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+        &:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+    &_small {
+        display: none;
+    }
+}
+
+@media(max-width:1024px) {
+    .menu {
+        &__link {
+            &_small {
+                font-size: 18px;
+                line-height: 82px;
+                margin-right: 60px;
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &_footer {
+            display: none;
+        }
+        &_small {
+            margin-top: 17px;
+            display: block;
+            height: 82px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: none;
+            border-left: none;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .menu {
+        width: 332px;
+        &__link {
+            font-size: 14px;
+            color: #FFFFFF;
+            &_small {
+                font-size: 18px;
+                line-height: 82px;
+                margin-right: 60px;
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &_footer {
+            display: none;
+        }
+        &_small {
+            margin-top: 17px;
+            display: block;
+            height: 82px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: none;
+            border-left: none;
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .menu_main {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 77%;
+        left: -100%;
+        z-index: 2;
+        top: 0;
+        background: rgba(255, 255, 255, 0.9);
+        transition: 0.5s all;
+        &_active {
+            left: 0;
+        }
+        &__link {
+            font-size: 26px;
+            text-align: center;
+            color: #3C4260;
+        }
+    }
+    .menu_small {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+    .menu {
+        &__link {
+            &_small {
+                font-size: 16px;
+                margin-right: 0;
+            }
+        }
+    }
+}

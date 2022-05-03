@@ -1,0 +1,77 @@
+.ways {
+    min-height: 415px;
+    padding: 55px 0 46px 0;
+    &__descr {
+        margin-top: 14px;
+        font-weight: 300;
+        font-size: 13px;
+        text-align: center;
+        color: #45515F;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 44px;
+        max-width: 840px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        cursor: pointer;
+        padding: 29px 0 23px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 140px;
+        height: 133px;
+        background: #F6F9FC;
+        border-radius: 22px;
+        transition: 0.5s all;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__arr {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .ways {
+        &__card {
+            width: 128px;
+            height: 121px;
+            margin: 0 auto;
+            margin-top: 19px;
+            &:hover {
+                transform: scale(1);
+            }
+        }
+        &__img {
+            transform: scale(0.85);
+        }
+        &__arr {
+            transform: scale(0.95);
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .ways {
+        &__card {
+            width: 102px;
+            height: 97px;
+        }
+        &__img {
+            transform: scale(0.65);
+        }
+        &__arr {
+            transform: scale(0.8);
+        }
+    }
+}
