@@ -429,7 +429,6 @@
   padding: 80px 0;
 }
 .andersen__descr {
-  display: flex;
   align-items: center;
   width: 70%;
   min-height: 370px;
@@ -440,10 +439,10 @@
 }
 .andersen__img {
   width: 35%;
-  height: 300px;
+  height: 340px;
   position: absolute;
   right: 0;
-  top: 120px;
+  top: 95px;
   background: rgba(217, 193, 145, 0.5);
 }
 
