@@ -21109,6 +21109,8 @@ var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.j
 window.addEventListener('DOMContentLoaded', function () {
   var menu = document.querySelector('.upper__menu');
   var logo = document.querySelector('.upper__logo');
+  var menuMobile = document.querySelector('.upper__mobile');
+  var hamburgerMobile = document.querySelector('.hamburger');
 
   if (window.pageYOffset == 0) {
     menu.style.background = 'rgba(217, 193, 145, .2)';
@@ -21119,9 +21121,13 @@ window.addEventListener('DOMContentLoaded', function () {
     if (window.pageYOffset == 0) {
       menu.style.background = 'rgba(217, 193, 145, .2)';
       logo.style.height = '100px';
+      menuMobile.style.display = "";
+      hamburgerMobile.style.top = "70px";
     } else {
       logo.style.height = '60px';
       menu.style.background = 'rgba(255, 255, 255, 1)';
+      menuMobile.style.display = "none";
+      hamburgerMobile.style.top = "7px";
     }
   });
   var faqButtons = document.querySelectorAll('.faq__plus');
