@@ -21113,13 +21113,13 @@ window.addEventListener('DOMContentLoaded', function () {
   var hamburgerMobile = document.querySelector('.hamburger');
 
   if (window.pageYOffset == 0) {
-    menu.style.background = 'rgba(217, 193, 145, .2)';
+    menu.style.background = 'rgba(217, 193, 145, .4)';
     logo.style.height = '100px';
   }
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset == 0) {
-      menu.style.background = 'rgba(217, 193, 145, .2)';
+      menu.style.background = 'rgba(217, 193, 145, .4)';
       logo.style.height = '100px';
       menuMobile.style.display = "";
       hamburgerMobile.style.top = "70px";
