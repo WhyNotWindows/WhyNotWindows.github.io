@@ -21108,24 +21108,35 @@ var _require = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.j
 
 window.addEventListener('DOMContentLoaded', function () {
   var menu = document.querySelector('.upper__menu');
+  var wrapper = document.querySelector('.upper__wrapper');
   var logo = document.querySelector('.upper__logo');
   var menuMobile = document.querySelector('.upper__mobile');
+  var offers = document.querySelector('.upper__offers');
   var hamburgerMobile = document.querySelector('.hamburger');
 
   if (window.pageYOffset == 0) {
-    menu.style.background = 'rgba(217, 193, 145, .4)';
+    menu.style.background = 'rgba(217, 193, 145, .4)'; //offers.style.background = 'rgba(217, 193, 145, .4)';
+
     logo.style.height = '100px';
+    menu.style.height = '114px';
+    wrapper.style.height = '100%';
   }
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset == 0) {
-      menu.style.background = 'rgba(217, 193, 145, .4)';
+      menu.style.background = 'rgba(217, 193, 145, .4)'; //offers.style.background = 'rgba(217, 193, 145, .4)';
+
+      menu.style.height = '114px';
+      wrapper.style.height = '100%';
       logo.style.height = '100px';
       menuMobile.style.display = "";
-      hamburgerMobile.style.top = "70px";
+      hamburgerMobile.style.top = "100%";
     } else {
       logo.style.height = '60px';
-      menu.style.background = 'rgba(255, 255, 255, 1)';
+      menu.style.height = '74px';
+      wrapper.style.height = '100%';
+      menu.style.background = 'rgba(255, 255, 255, 1)'; //offers.style.background = 'rgba(255, 255, 255, 1)';
+
       menuMobile.style.display = "none";
       hamburgerMobile.style.top = "7px";
     }

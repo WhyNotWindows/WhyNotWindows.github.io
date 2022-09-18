@@ -3,8 +3,7 @@
   position: relative;
   min-height: 106vh;
   padding-top: 43vh;
-  background: url(./../img/room5.jpeg) center center/cover no-repeat;
-  background-position: 0 145px;
+  background: url(./../img/bg_main.jpg) center center/cover no-repeat;
 }
 .promo__header {
   font-size: 55px;
@@ -14,7 +13,7 @@
 }
 .promo__subheader {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
@@ -35,6 +34,7 @@
   width: 250px;
   font-size: 18px;
   background: #d9c191;
+  color: black;
 }
 .promo__helper {
   display: none;
@@ -74,7 +74,7 @@
     font-size: 45px;
   }
   .promo__subheader {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .upper {
@@ -90,17 +90,22 @@
 }
 .upper__offers {
   transition: 0.5s all;
+  margin-right: 20px;
+  padding: 0 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 17px;
+  text-align: center;
+  background: transparent;
 }
 .upper__offers:hover {
-  height: 81px;
+  height: 115px;
+  background: rgba(217, 193, 145, 0.7);
 }
 .upper__links {
   display: flex;
-  align-items: center;
+  height: 20px;
 }
 .upper__contacts {
   padding-top: 4px;
@@ -129,9 +134,21 @@
 .upper__link {
   margin-right: 20px;
   color: #484d47;
+  text-transform: uppercase;
 }
 .upper__link:last-child {
   margin-right: 0;
+}
+.upper__offer {
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 0;
+}
+.upper__offer:nth-child(1) {
+  margin-top: 0;
+}
+.upper #change-lang {
+  margin-top: -5px;
 }
 .upper__lang {
   cursor: pointer;
@@ -147,7 +164,6 @@
 }
 .upper__lang_active {
   height: 55px;
-  margin-bottom: -25px;
 }
 .upper__mobile {
   display: none;
