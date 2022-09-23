@@ -191,7 +191,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 77%;
     left: -100%;
     padding: 25px 0;
@@ -205,9 +205,11 @@
   }
   .upper__offers {
     height: 50px;
+    margin-top: 20px;
   }
   .upper__links {
     flex-direction: column;
+    height: 100%;
   }
   .upper__link {
     font-size: 26px;
@@ -339,6 +341,9 @@
   }
 }
 @media (max-width: 575px) {
+  .title {
+    line-height: 1.2;
+  }
   .title_lh0 {
     margin-top: 40px;
   }
@@ -530,7 +535,7 @@
 }
 @media (max-width: 576px) {
   .andersen {
-    min-height: auto;
+    height: auto;
   }
   .andersen__descr {
     width: 100%;
@@ -615,7 +620,7 @@
 @media (max-width: 1024px) {
   .rooms__block {
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .rooms__img {
     width: 100%;
@@ -1068,7 +1073,8 @@
 }
 @media (max-width: 576px) {
   .giftcard {
-    min-height: 170vh;
+    min-height: 200vh;
+    padding-bottom: 200px;
   }
   .giftcard__descr {
     width: 100%;
@@ -1077,7 +1083,8 @@
   }
   .giftcard__img {
     width: 100%;
-    transform: translateY(110%);
+    height: auto;
+    transform: translateY(170%);
   }
 }
 .corporations {
@@ -1114,6 +1121,10 @@
   }
   .corporations__descr {
     width: 100%;
+    margin-top: 25px;
+  }
+  .corporations__text {
+    margin-top: 15px;
   }
 }
 .inspiration {

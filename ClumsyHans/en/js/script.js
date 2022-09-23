@@ -21120,6 +21120,8 @@ window.addEventListener('DOMContentLoaded', function () {
     logo.style.height = '100px';
     menu.style.height = '114px';
     wrapper.style.height = '100%';
+    menuMobile.style.height = "114px";
+    hamburgerMobile.style.top = "55%";
   }
 
   window.addEventListener('scroll', function () {
@@ -21129,16 +21131,14 @@ window.addEventListener('DOMContentLoaded', function () {
       menu.style.height = '114px';
       wrapper.style.height = '100%';
       logo.style.height = '100px';
-      menuMobile.style.display = "";
-      hamburgerMobile.style.top = "100%";
+      menuMobile.style.height = "114px"; //hamburgerMobile.style.top = "50%";
     } else {
       logo.style.height = '60px';
       menu.style.height = '74px';
       wrapper.style.height = '100%';
       menu.style.background = 'rgba(255, 255, 255, 1)'; //offers.style.background = 'rgba(255, 255, 255, 1)';
 
-      menuMobile.style.display = "none";
-      hamburgerMobile.style.top = "7px";
+      menuMobile.style.height = "74px"; //hamburgerMobile.style.top = "7px";
     }
   });
   var faqButtons = document.querySelectorAll('.faq__plus');
