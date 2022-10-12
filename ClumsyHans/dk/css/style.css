@@ -10,6 +10,7 @@
   color: #fff;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: -3px 0 2px #bd9a58, 0 3px 2px #bd9a58, 3px 0 2px #bd9a58, 0 -3px 2px #bd9a58;
 }
 .promo__subheader {
   margin-top: 20px;
@@ -17,6 +18,7 @@
   color: #fff;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: -3px 0 2px #bd9a58, 0 3px 2px #bd9a58, 3px 0 2px #bd9a58, 0 -3px 2px #bd9a58;
 }
 .promo__advantages {
   width: 100%;
@@ -89,6 +91,7 @@
   padding: 7px 0;
 }
 .upper__offers {
+  width: 65px;
   transition: 0.5s all;
   margin-right: 20px;
   padding: 0 5px;
@@ -101,6 +104,7 @@
 }
 .upper__offers:hover {
   height: 115px;
+  width: 110px;
   background: rgba(217, 193, 145, 0.7);
 }
 .upper__links {
