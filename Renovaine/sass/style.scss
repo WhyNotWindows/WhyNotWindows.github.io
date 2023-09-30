@@ -1,0 +1,46 @@
+@import 'base/variables';
+@import 'libs/bootstrap-reboot.min';
+
+@import 'blocks/title';
+@import 'blocks/footer';
+@import 'blocks/overlay';
+@import 'blocks/promo';
+@import 'blocks/call';
+@import 'blocks/about';
+@import 'blocks/roadmap';
+@import 'blocks/menu';
+@import 'blocks/button';
+@import 'blocks/onboarding';
+
+@import 'base/media';
+
+* {
+    font-family: 'Mulish', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    z-index: 1;
+}
+body {
+    background: var(--main-bg);
+}
+a {
+    color: #000;
+    &:hover {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media(max-width:400px) {
+    .container {
+        padding: 0 10px;
+    }
+}

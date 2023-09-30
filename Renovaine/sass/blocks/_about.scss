@@ -1,0 +1,12 @@
+.about {
+    padding: 60px 0;
+    &__text {
+        width: 75%;
+        color: black;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}
